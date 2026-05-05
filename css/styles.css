@@ -241,39 +241,29 @@ section { padding: 6rem 0; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   cursor: pointer;
 }
 
-.nav-logo-mark {
-  width: 38px;
-  height: 38px;
-  background: var(--gradient);
-  border-radius: 9px;
-  display: grid;
-  place-items: center;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: -0.03em;
-  flex-shrink: 0;
+.nav-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
-.nav-logo-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--text);
-  letter-spacing: -0.01em;
+/* ── Banner Section ── */
+.banner-section {
+  padding: 3rem 0;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-logo-text span {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
 }
 
 .nav-links {
