@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npx uipro-cli *)",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
