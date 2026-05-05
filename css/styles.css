@@ -337,6 +337,10 @@ section { padding: 6rem 0; }
   transition: all 0.3s ease;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
