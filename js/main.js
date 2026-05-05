@@ -59,10 +59,17 @@ function initScrollReveal() {
         }
       });
     },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.01, rootMargin: '0px 0px 100px 0px' }
   );
 
-  elements.forEach(el => observer.observe(el));
+  elements.forEach(el => {
+    observer.observe(el);
+    // Check if element is already in view on page load
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('visible');
+    }
+  });
 }
 
 /* ── Animated counters ── */
